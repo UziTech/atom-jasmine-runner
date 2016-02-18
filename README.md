@@ -23,3 +23,5 @@ import path from 'path'
 import Runner from 'atom-jasmine-runner'
 export default Runner(path.join(__dirname, '../'))
 ```
+
+Prior art: https://github.com/atom/atom/pull/6099/files
