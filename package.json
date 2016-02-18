@@ -1,0 +1,31 @@
+{
+  "name": "atom-jasmine-runner",
+  "description": "Jasmine 2.x test runner for Atom packages.",
+  "version": "0.0.1",
+  "keywords": [
+    "atom",
+    "jasmine",
+    "test"
+  ],
+  "license": "MIT",
+  "author": "Daniel Hengeveld (@thedaniel)",
+  "main": "dist/runner.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thedaniel/atom-jasmine-runner.git"
+  },
+  "dependencies": {
+    "jasmine": "2.4.1",
+    "jasmine-terminal-reporter": "1.0.1",
+    "fs-plus": "2.8.1",
+    "glob": "7.0.0"
+  },
+  "scripts": {
+    "build": "babel lib --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"    
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0"
+  }
+}
