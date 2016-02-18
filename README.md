@@ -12,7 +12,13 @@ Very under construction, doesn't really work yet. To use:
 ```js
 // package.json
 {
-  // TODO" this might actually need a wrapper script?
-  "atomTestRunner": "atom-jasmine-runner"
+  "atomTestRunner": "./spec/runner.js"
 }
+```
+```js
+// ./spec/runner.js
+'use babel'
+import path from 'path'
+import Runner from 'atom-jasmine-runner'
+export default Runner(path.join(__dirname, '../'))
 ```
